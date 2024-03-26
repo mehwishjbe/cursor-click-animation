@@ -48,5 +48,16 @@ body {
   animation: click-animation-circle 3s ease-out infinite;
 }
 
-@keyframes click-animation-circle {
+@keyframes click-animation-circle{
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+        transform: scale(3);
+    }
+
 }
