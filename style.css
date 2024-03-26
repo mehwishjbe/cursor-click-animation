@@ -5,41 +5,48 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    min-height: 100vh;
-    background: #15151c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  min-height: 100vh;
+  background: #15151c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* =======Cursor click animation ==========*/
-.cursor{
-    z-index: 99999;
-    position: relative;
+.cursor {
+  z-index: 99999;
+  position: relative;
 }
 
-.cursor .click-animation{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cursor .click-animation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cursor .click-animation .shape{
-    position: absolute;
+.cursor .click-animation .shape {
+  position: absolute;
 }
 
-.cursor .click-animation .shape.circle.big{
-   width: 40px;
-   height: 40px;
-   border: 2px solid #4fb4f8;
-   border-radius: 50%;
+.cursor .click-animation .shape.circle.big {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4fb4f8;
+  border-radius: 50%;
 }
 
-.cursor .click-animation .shape.circle.small{
-   width: 20px;
-   height: 20px;
-   border: 2px solid #2ca8fa;
-   border-radius: 50%;
+.cursor .click-animation .shape.circle.small {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2ca8fa;
+  border-radius: 50%;
+}
+
+.cursor .click-animation .shape.circle {
+  animation: click-animation-circle 3s ease-out infinite;
+}
+
+@keyframes click-animation-circle {
 }
