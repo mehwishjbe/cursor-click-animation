@@ -9,3 +9,9 @@ body{
     min-height: 100vh;
     background: #15151c;
 }
+
+/* =======Cursor click animation ==========*/
+.cursor{
+    z-index: 99999;
+    position: relative;
+}
