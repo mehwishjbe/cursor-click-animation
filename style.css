@@ -8,15 +8,15 @@
 body {
   min-height: 100vh;
   background: #15151c;
-  display: flex;
+ /*  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 /* =======Cursor click animation ==========*/
 .cursor {
   z-index: 99999;
-  position: relative;
+  position: fixed;
 }
 
 .cursor .click-animation {
@@ -113,17 +113,15 @@ body {
   animation: click-animation-disc 3s ease-out infinite;
 }
 
-
 @keyframes click-animation-disc {
-    0% {
-      opacity: 0;
-    }
-    5% {
-      opacity: 1;
-    }
-    40% {
-      opacity: 0;
-      transform: scale(2) translate(-70px, -30px);
-    }
+  0% {
+    opacity: 0;
   }
-  
+  5% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    transform: scale(2) translate(-70px, -30px);
+  }
+}
