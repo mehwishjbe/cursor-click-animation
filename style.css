@@ -49,24 +49,35 @@ body {
   /* animation: click-animation-circle 3s ease-out infinite; */
 }
 
-@keyframes click-animation-circle{
-    0%{
-        opacity: 0;
-    }
-    5%{
-        opacity: 1;
-    }
-    30%{
-        opacity: 0;
-        transform: scale(3);
-    }
-
+@keyframes click-animation-circle {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    transform: scale(3);
+  }
 }
 
-.cursor .click-animation .shape.triangle.yellow{
-    border-style: solid;
-    border-width: 0 5px 10px 5px;
-    border-color: transparent transparent #f9de2d transparent;
-    animation: click-animation-triangle-yellow 3s ease-out infinite;;
+.cursor .click-animation .shape.triangle.yellow {
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #f9de2d transparent;
+  animation: click-animation-triangle-yellow 3s ease-out infinite;
 }
 
+@keyframes click-animation-triangle-yellow {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    transform: scale(2.5) translate(50px, -50px); 
+  }
+}
