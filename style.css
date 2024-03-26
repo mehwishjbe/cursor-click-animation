@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    min-height: 100vh;
+    background: #15151c;
+}
