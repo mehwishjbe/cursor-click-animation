@@ -28,7 +28,7 @@ body {
 
 .cursor .click-animation .shape {
   position: absolute;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .cursor .click-animation .shape.circle.big {
@@ -46,7 +46,7 @@ body {
 }
 
 .cursor .click-animation .shape.circle {
-  /* animation: click-animation-circle 3s ease-out infinite; */
+  animation: click-animation-circle 3s ease-out infinite;
 }
 
 @keyframes click-animation-circle {
@@ -68,13 +68,13 @@ body {
   border-style: solid;
   border-width: 0 5px 10px 5px;
   border-color: transparent transparent #f9de2d transparent;
-  /* animation: click-animation-triangle-yellow 3s ease-out infinite; */
+  animation: click-animation-triangle-yellow 3s ease-out infinite;
 }
 .cursor .click-animation .shape.triangle.green {
   border-style: solid;
   border-width: 0 3.5px 7px 3.5px;
   border-color: transparent transparent #49eda0 transparent;
-  /* animation: click-animation-triangle-green 3s ease-out infinite; */
+  animation: click-animation-triangle-green 3s ease-out infinite;
 }
 
 @keyframes click-animation-triangle-yellow {
@@ -91,23 +91,24 @@ body {
 }
 
 @keyframes click-animation-triangle-green {
-    0% {
-      opacity: 0;
-    }
-    5% {
-      opacity: 1;
-    }
-    40% {
-      opacity: 0;
-      transform: scale(2.5) translate(20px, 50px) rotate(360deg); 
-    }
+  0% {
+    opacity: 0;
   }
-
-  /* =======Cursor DISC click animation ==========*/
-
-  .cursor .click-animation .shape.disc{
-    width: 8.5px;
-    height: 8.5px;
-    background: #d563f8;
-    border-radius: 50%;
+  5% {
+    opacity: 1;
   }
+  40% {
+    opacity: 0;
+    transform: scale(2.5) translate(20px, 50px) rotate(360deg);
+  }
+}
+
+/* =======Cursor DISC click animation ==========*/
+
+.cursor .click-animation .shape.disc {
+  width: 8.5px;
+  height: 8.5px;
+  background: #d563f8;
+  border-radius: 50%;
+  animation: click-animation-disc 3s ease-out infinite;
+}
