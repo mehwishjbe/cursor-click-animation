@@ -8,6 +8,9 @@
 body{
     min-height: 100vh;
     background: #15151c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* =======Cursor click animation ==========*/
@@ -18,15 +21,25 @@ body{
 
 .cursor .click-animation{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cursor .click-animation .shape{
-    position: relative;
+    position: absolute;
 }
 
-.cursor .click-animation .shape .circle .big{
+.cursor .click-animation .shape.circle.big{
    width: 40px;
    height: 40px;
    border: 2px solid #4fb4f8;
+   border-radius: 50%;
+}
+
+.cursor .click-animation .shape.circle.small{
+   width: 20px;
+   height: 20px;
+   border: 2px solid #2ca8fa;
    border-radius: 50%;
 }
