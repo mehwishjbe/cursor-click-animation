@@ -15,3 +15,7 @@ body{
     z-index: 99999;
     position: relative;
 }
+
+.cursor .click-animation{
+    position: relative;
+}
