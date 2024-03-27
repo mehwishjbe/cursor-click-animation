@@ -45,7 +45,7 @@ body {
   border-radius: 50%;
 }
 
-.cursor .click-animation .shape.circle {
+.cursor.active .click-animation .shape.circle {
   animation: click-animation-circle 3s ease-out infinite;
 }
 
@@ -70,10 +70,18 @@ body {
   border-color: transparent transparent #f9de2d transparent;
   animation: click-animation-triangle-yellow 3s ease-out infinite;
 }
+
+.cursor.active .click-animation .shape.triangle.yellow {
+  animation: click-animation-triangle-yellow 3s ease-out infinite;
+}
+
 .cursor .click-animation .shape.triangle.green {
   border-style: solid;
   border-width: 0 3.5px 7px 3.5px;
   border-color: transparent transparent #49eda0 transparent;
+  animation: click-animation-triangle-green 3s ease-out infinite;
+}
+.cursor.active .click-animation .shape.triangle.green {
   animation: click-animation-triangle-green 3s ease-out infinite;
 }
 
