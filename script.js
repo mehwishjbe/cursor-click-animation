@@ -8,4 +8,7 @@ document.addEventListener("click", (e) => {
     cursorAnimation.style.top = y + "px";
     cursorAnimation.style.left = x + "px";
     
+    let cursorClone = cursorAnimation.cloneNode(true);
+    document.querySelector("body").appendChild(cursorClone);
+
 });
