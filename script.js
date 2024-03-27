@@ -1,0 +1,1 @@
+const cursorAnimation = document.querySelector(".cursor");
