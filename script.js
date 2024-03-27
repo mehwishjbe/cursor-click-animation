@@ -11,9 +11,10 @@ document.addEventListener("click", (e) => {
   cursors.forEach((cursor) => {
     cursor.classList.add("active");
 
-    function removeCursorActive(){
-        cursor.classList.remove("active");
+    function removeCursorActive() {
+      cursor.classList.remove("active");
     }
+    setTimeout(removeCursorActive, 1000);
   });
 
   let cursorClone = cursorAnimation.cloneNode(true);
