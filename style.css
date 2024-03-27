@@ -144,3 +144,8 @@ section {
   flex-direction: column;
   padding: 0 200px;
 }
+
+.home h1{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
