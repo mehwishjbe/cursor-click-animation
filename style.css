@@ -136,3 +136,11 @@ body {
     transform: scale(2) translate(-70px, -30px);
   }
 }
+
+section {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px;
+}
