@@ -11,4 +11,8 @@ document.addEventListener("click", (e) => {
     let cursorClone = cursorAnimation.cloneNode(true);
     document.querySelector("body").appendChild(cursorClone);
 
+    setTimeout(() => {
+        cursorClone.remove();
+    }, 1000);
+
 });
