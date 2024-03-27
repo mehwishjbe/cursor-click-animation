@@ -9,7 +9,7 @@ document.addEventListener("click", (e) => {
   cursorAnimation.style.left = x + "px";
 
   cursors.forEach((cursor) => {
-    cursor.classList.add(".cursor");
+    cursor.classList.add("active");
   });
 
   let cursorClone = cursorAnimation.cloneNode(true);

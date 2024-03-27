@@ -120,6 +120,9 @@ body {
   border-radius: 50%;
   animation: click-animation-disc 3s ease-out infinite;
 }
+.cursor.active .click-animation .shape.disc {
+  animation: click-animation-disc 3s ease-out infinite;
+}
 
 @keyframes click-animation-disc {
   0% {
